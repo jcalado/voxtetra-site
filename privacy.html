@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#061a38" />
+  <meta name="description" content="Privacy Policy for voxTetra — detailed disclosure of audio recording permissions, camera usage, local profile storage, and data handling." />
+  <meta property="og:title" content="voxTetra — Privacy Policy" />
+  <meta property="og:description" content="Privacy Policy and permission disclosures for the voxTetra push-to-talk application." />
+  <meta property="og:image" content="assets/voxtetra-banner.png" />
+  <link rel="icon" type="image/png" href="assets/voxtetra-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Privacy Policy — voxTetra</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell nav-shell">
+      <a class="brand" href="index.html#top" aria-label="voxTetra home">
+        <img src="assets/voxtetra-mark.png" alt="" width="45" height="45" />
+        <span>vox<span>Tetra</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html#about">Why voxTetra</a>
+        <a href="index.html#interface">The app</a>
+        <a href="index.html#connect">How it connects</a>
+      </nav>
+      <a href="index.html" class="nav-action">Home <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="index.html#about">Why voxTetra</a>
+      <a href="index.html#interface">The app</a>
+      <a href="index.html#connect">How it connects</a>
+      <a href="index.html">Home <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <section class="policy-hero">
+    <div class="hero-halo hero-halo-a" aria-hidden="true"></div>
+    <div class="hero-halo hero-halo-b" aria-hidden="true"></div>
+    <div class="shell policy-hero-inner">
+      <span class="policy-pill">LEGAL &amp; COMPLIANCE</span>
+      <h1>Privacy Policy</h1>
+      <p class="policy-hero-lead">Privacy disclosures, permission transparency, and data handling practices for the voxTetra mobile application.</p>
+      <div class="policy-meta-row">
+        <span class="policy-meta-tag"><strong>Application:</strong> voxTetra (Android)</span>
+        <span class="policy-meta-tag"><strong>Target Systems:</strong> TETRA BREW IP Core &amp; PoC Radios</span>
+        <span class="policy-meta-tag"><strong>Effective Date:</strong> November 6, 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="policy-main">
+    <div class="shell policy-layout">
+      <article class="policy-card">
+        <div class="policy-summary-callout">
+          <h3>Summary at a Glance</h3>
+          <p>voxTetra is a Push-to-Talk over Cellular (PoC) client engineered to communicate with TETRA BREW IP Core networks. <strong>We do not sell user data, we do not run advertisements, and we do not use third-party behavioral tracking or marketing SDKs.</strong> Audio is only recorded and streamed in real time while you hold the Push-to-Talk (PTT) key, and configuration profiles are stored strictly on your local device.</p>
+        </div>
+
+        <section class="policy-section">
+          <h2>1. Introduction &amp; Applicability</h2>
+          <p>This Privacy Policy applies to the <strong>voxTetra</strong> mobile application (hereinafter referred to as &ldquo;the Application&rdquo;, &ldquo;voxTetra&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;), available for Android devices and dedicated push-over-cellular (PoC) hardware (including the Hytera P50 and compatible handsets).</p>
+          <p>voxTetra provides two-way radio functionality, bridging mobile handsets to authorized TETRA BREW IP Core servers over cellular data (LTE/5G) or Wi-Fi networks. This policy explains how voxTetra interacts with your device hardware, system permissions, and network data.</p>
+        </section>
+
+        <section class="policy-section">
+          <h2>2. Device Permissions &amp; Data Accessed</h2>
+          <p>To operate as a real-time two-way radio terminal, voxTetra requests access to specific device hardware features and Android system permissions. Below is a detailed breakdown of each permission, why it is requested, and how data is handled:</p>
+
+          <div class="perm-grid">
+            <div class="perm-box">
+              <div class="perm-header">
+                <span class="perm-badge">Microphone</span>
+                <code>android.permission.RECORD_AUDIO</code>
+              </div>
+              <p><strong>Purpose:</strong> Required to capture your voice when transmitting on an active talkgroup.</p>
+              <p><strong>Operation &amp; Retention:</strong> voxTetra accesses the microphone strictly when you actively engage the Push-to-Talk (PTT) control (either via a mapped physical side key or the on-screen PTT interface). The audio stream is immediately digitized, packetized, and streamed live to your configured TETRA BREW IP Core. <strong>Audio recordings are never saved, stored, or archived locally on your device, and are never routed to developer servers.</strong> When you release the PTT button, microphone access ceases immediately.</p>
+            </div>
+
+            <div class="perm-box">
+              <div class="perm-header">
+                <span class="perm-badge">Camera</span>
+                <code>android.permission.CAMERA</code>
+              </div>
+              <p><strong>Purpose:</strong> Optional permission used solely for the QR code profile import feature.</p>
+              <p><strong>Operation &amp; Retention:</strong> The camera is activated only while the in-app QR scanner screen is displayed. Video frames are processed entirely in local device memory to parse network settings (such as server hostname, port, and security token). <strong>No photos, video frames, or visual data are ever stored, written to disk, or transmitted over any network.</strong> Users may decline camera permission and configure connection profiles manually.</p>
+            </div>
+
+            <div class="perm-box">
+              <div class="perm-header">
+                <span class="perm-badge">Foreground Service</span>
+                <code>android.permission.FOREGROUND_SERVICE</code><br />
+                <code>android.permission.FOREGROUND_SERVICE_MICROPHONE</code>
+              </div>
+              <p><strong>Purpose:</strong> Required to keep the two-way radio session open while the app is running in the background or when the device screen is switched off.</p>
+              <p><strong>Operation &amp; Retention:</strong> As a real-time radio client, voxTetra must be able to receive incoming talkgroup audio and respond immediately to physical PTT key presses even when another application is in the foreground. A persistent Android system notification is displayed while the background radio service is running, indicating active connection status.</p>
+            </div>
+
+            <div class="perm-box">
+              <div class="perm-header">
+                <span class="perm-badge">Network Access</span>
+                <code>android.permission.INTERNET</code><br />
+                <code>android.permission.ACCESS_NETWORK_STATE</code>
+              </div>
+              <p><strong>Purpose:</strong> Required to establish IP connectivity with your designated TETRA BREW IP Core and monitor network handover.</p>
+              <p><strong>Operation &amp; Retention:</strong> voxTetra uses network connectivity solely to transmit real-time VoIP packets, channel signaling, and keepalive pings to the server IP or domain you specify.</p>
+            </div>
+
+            <div class="perm-box">
+              <div class="perm-header">
+                <span class="perm-badge">Hardware Key Events</span>
+                <code>Physical Button Mapping</code>
+              </div>
+              <p><strong>Purpose:</strong> Allows mapping dedicated hardware keys (such as the side PTT key on rugged PoC radios or volume rockers) to trigger voice transmission.</p>
+              <p><strong>Operation &amp; Retention:</strong> Key events are handled solely within the context of voxTetra to trigger and release the PTT state. voxTetra does not log keystrokes, monitor user input in other applications, or transmit hardware key data outside the device.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="policy-section">
+          <h2>3. Data Collection, Storage &amp; Local Persistence</h2>
+          <p>voxTetra adheres strictly to data minimization principles:</p>
+          <ul>
+            <li><strong>Profile and Gateway Configuration:</strong> Server IP addresses, port numbers, authentication tokens, profile names, and assigned talkgroup lists are stored exclusively in the application&rsquo;s private internal storage on your device. This data never leaves your device except when communicating directly with your configured TETRA BREW IP Core.</li>
+            <li><strong>No Centralized Developer Accounts:</strong> voxTetra does not require you to register a personal account with us, provide your name, email address, or phone number to download or use the application.</li>
+            <li><strong>No Location Tracking:</strong> voxTetra does not request GPS or precise location permissions (<code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code>) and does not track your physical whereabouts.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>4. Third-Party Sharing, Advertising &amp; Tracking</h2>
+          <div class="highlight-callout">
+            <p><strong>Zero Third-Party Advertising or Analytics:</strong> voxTetra does NOT contain any advertising frameworks (e.g., Google AdMob), behavioral analytics SDKs (e.g., Google Analytics, Firebase Analytics, Flurry), or social network trackers (e.g., Facebook SDK).</p>
+          </div>
+          <p>We do not sell, rent, monetize, or trade any user information, audio streams, or device identifiers to third parties, data brokers, or marketing entities.</p>
+          <p>All voice transmissions and signaling packets are exchanged exclusively between your device and the designated <strong>TETRA BREW IP Core</strong> endpoint chosen and authorized by you or your network administrator.</p>
+        </section>
+
+        <section class="policy-section">
+          <h2>5. Server-Side Infrastructure &amp; Network Operator Responsibilities</h2>
+          <p>voxTetra operates as a client-side endpoint. When connected to a TETRA BREW IP Core or TETRA gateway:</p>
+          <ul>
+            <li>Voice packets, talkgroup affiliations, and client identifiers (such as ISSI/GSSI numbers) are processed by the receiving gateway according to the infrastructure operator&rsquo;s configuration.</li>
+            <li>If your organization operates or subscribes to a private TETRA network, that organization acts as the data controller for any communications logged, dispatched, or recorded on the server side.</li>
+            <li>Please consult your organization&rsquo;s internal IT and communications policy for details on server-side retention of two-way radio traffic.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>6. Data Retention &amp; User Data Deletion Mechanisms</h2>
+          <p>In full compliance with Google Play Developer Policies and global privacy regulations:</p>
+          <ul>
+            <li><strong>Instant Local Deletion:</strong> You can completely erase all stored profiles, server addresses, and application preferences at any time by selecting &ldquo;Delete Profile&rdquo; within the application, or by navigating in Android to <em>Settings &gt; Apps &gt; voxTetra &gt; Storage &gt; Clear Storage / Clear Data</em>.</li>
+            <li><strong>App Uninstallation:</strong> Uninstalling voxTetra immediately removes all sandboxed files, settings, and cached parameters from your device.</li>
+            <li><strong>No Cloud Account to Delete:</strong> Because voxTetra does not collect or retain user personal data on developer cloud servers, no separate account deletion request is required to remove your personal information from our systems.</li>
+            <li><strong>Server Deletion Inquiries:</strong> To revoke device credentials or remove assigned unit identifiers stored on an organization-managed TETRA BREW IP Core, please contact your network dispatch administrator.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>7. Data Security Measures</h2>
+          <p>We implement industry-standard security safeguards to protect data handled by the application:</p>
+          <ul>
+            <li>Profile configurations and connection tokens are stored in private app storage isolated by the Android OS application sandbox.</li>
+            <li>Network communication supports modern IP security standards, including TLS and encrypted media transport where enabled on the TETRA BREW IP Core.</li>
+            <li>Memory buffers for microphone audio and camera frames are cleared immediately following transmission or QR decode processing.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section">
+          <h2>8. Children&rsquo;s Privacy</h2>
+          <p>voxTetra is a professional communications utility intended for operational, industrial, and organizational use. The application is not directed toward children under the age of 13 (or under 16 in the European Economic Area). We do not knowingly collect personal information from children.</p>
+        </section>
+
+        <section class="policy-section">
+          <h2>9. Changes to this Privacy Policy</h2>
+          <p>We may update this Privacy Policy from time to time to reflect modifications in application features, device operating system requirements, or applicable laws. Any revisions will be published directly to this page with an updated &ldquo;Effective Date&rdquo;. We encourage users to review this policy periodically.</p>
+        </section>
+
+        <section class="policy-section">
+          <h2>10. Contact Information</h2>
+          <p>If you have any questions, concerns, or inquiries regarding this Privacy Policy or the operation of voxTetra, please contact us at:</p>
+          <div class="contact-box">
+            <p><strong>voxTetra Support &amp; Developer Contact</strong></p>
+            <p>Email: <a href="mailto:apps@jcalado.com">apps@jcalado.com</a></p>
+            <p>Website: <a href="https://voxtetra.jcalado.com">https://voxtetra.jcalado.com</a></p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <a class="brand footer-brand" href="index.html#top"><img src="assets/voxtetra-mark.png" alt="" width="39" height="39" /><span>vox<span>Tetra</span></span></a>
+      <p>Push-to-Talk over Cellular for compatible TETRA networks.</p>
+      <div class="footer-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#interface">The app</a>
+        <a href="index.html#connect">Connectivity</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="mailto:apps@jcalado.com">Contact</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
